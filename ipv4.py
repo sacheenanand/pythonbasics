@@ -9,8 +9,6 @@ def check_ipaddress(ip):
 			return False
 		if x[0] == 0 and len(x)!=1 or not x.isdigit() or int(x)>255:
 			return False
-		elif x[0] == 0:
-			return False
 	return True
 print("check if its a valie ip addrees or not", check_ipaddress("192.72.62.1"))
 print("check if its a valie ip addrees or not", check_ipaddress("ab.72.62.1"))
